@@ -1,0 +1,55 @@
+.trading-times{
+	form {
+		display: inline-block;
+		width: 49%;
+		width: calc((100% - 10px) / 2);
+		select {
+			height: 34px;
+		}
+		label, select{
+			line-height: inherit!important;
+		}
+	}
+	.trading-times-table {
+		width: 100%;
+		font-size: $FONT_SIZE_XSS;
+		table-layout: fixed;
+
+		thead {
+			background: $fillColor;
+			font-size: $FONT_SIZE_XS;
+
+			&.limits-by-market {
+				margin-top: 20px;
+			}
+
+			tr {
+				th {
+					padding: 5px;
+					vertical-align:top;
+					word-break:break-word;
+				}
+
+				&.title-row {
+					padding-left: 15px;
+					border-top: 1px solid $black;
+					border-bottom: 1px solid $black;
+					background: $secondaryContentColor;
+				}
+			}
+		}
+
+		tbody {
+			tr {
+				border-bottom: 1px solid $borderColor;
+
+				td {
+					padding: 5px;
+					font-size: $FONT_SIZE_XS;
+					vertical-align:top;
+					word-break:break-word;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,46 @@
+.language {
+	bg-language-list {
+		ion-content {
+			.item-content {
+				font-size: $FONT_SIZE_N;
+				background: $white;
+			}
+		}
+	}
+}
+@media only screen and (max-device-width: 480px) {
+	/*RU Language*/
+	body#ru {
+		.trade .buy-again {
+			button {
+				font-size: 12px;
+			}
+			.price-des {
+				font-size: 3vw;
+			}
+		}
+	}
+	body#pt {
+		.trade .buy-again {
+			button {
+				font-size: 12px;
+				line-height: 12px;
+				min-height: 32px;
+			}
+		}
+	}
+}
+
+body#ru .trade #trade-container bg-purchase .purchase .contract .row .col .button ,
+body#de .trade #trade-container bg-purchase .purchase .contract .row .col .button {
+	font-size: $FONT_SIZE_XS!important;
+	white-space: wrap;
+}
+body#ru .trade #trade-container bg-longcode .longcode .row .col ,
+body#de .trade #trade-container bg-longcode .longcode .row .col {
+	font-size: $FONT_SIZE_XS!important;
+}
+body#ru .trade #trade-container bg-longcode .longcode ,
+body#de .trade #trade-container bg-longcode .longcode {
+	max-height: 100px;
+}

@@ -1,0 +1,19 @@
+.connectivity{
+  align-items: center;
+  display: flex;
+  font-size: $FONT_SIZE_L;
+  justify-content: center;
+  .no-connection {
+    margin-top: 15px;
+  }
+  .logo {
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+  }
+  .slogan {
+    display: block;
+    margin: 5% auto 0;
+    width: 60%;
+  }
+}

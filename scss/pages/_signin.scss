@@ -1,0 +1,102 @@
+.sign-in {
+  background-color: $white;
+  .branding {
+    margin: 30px auto;
+    .logo {
+      display: block;
+      margin: 0 auto;
+      width: 40%;
+    }
+    .slogan {
+      display: block;
+      margin: 5% auto 0;
+      width: 60%;
+    }
+  }
+
+  .language {
+    border: none;
+  }
+
+  .signin-page {
+    height: 90vh;
+    height: calc(100vh - 45px) !important;
+    form, oauth {
+      display: flex;
+      flex-grow: 1;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .col {
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    .app-version {
+      display: flex;
+      flex-grow: 1;
+      align-items: flex-start;
+      justify-content: center;
+      .item {
+        padding-top: 0 !important;
+      }
+    }
+  }
+
+  .regulatory-information {
+    align-items: flex-end !important;
+    a {
+      font-weight: normal;
+    }
+  }
+
+  .gamstop {
+    a {
+      display: inline-block;
+      img {
+        width: 150px;
+      }
+    }
+  }
+
+  #emailform,
+  #virtualws {
+    margin: 0 auto;
+    .show-hide-password {
+      label {
+        font-size: $FONT_SIZE_XS;
+      }
+    }
+  }
+
+  .language {
+    label.item-input {
+      width: 75%;
+      margin: 0 auto;
+      i {
+        font-size: 40px;
+        width: 40px;
+        text-align: center;
+        &.icon-small {
+          font-size: 28px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 780px) {
+  .sign-in {
+    #emailform, #virtualws {
+      width: 75%;
+    }
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .sign-in {
+    #emailform, #virtualws {
+      width: 50%;
+    }
+  }
+}

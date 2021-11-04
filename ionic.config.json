@@ -1,0 +1,12 @@
+{
+  "name": "tickTrade",
+  "integrations": {
+    "cordova": {}
+  },
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "type": "ionic1",
+  "watchPatterns": []
+}

@@ -1,0 +1,75 @@
+.asset-index {
+	form {
+		display: inline-block;
+		width: 49%;
+		width: calc((100% - 10px) / 2);
+
+		select {
+			height: 34px;
+			text-transform: capitalize;
+
+			option {
+				text-transform: capitalize;
+			}
+		}
+
+		label,
+		select {
+			line-height: normal;
+		}
+	}
+
+	.table-container {
+		overflow-x: scroll;
+
+		&::-webkit-scrollbar {
+			display: none;
+		}
+	}
+
+	.asset-index-table {
+		width: 100%;
+		font-size: $FONT_SIZE_XSS;
+		table-layout: fixed;
+
+		tbody {
+			tr {
+				border-bottom: 1px solid $borderColor;
+
+				td {
+					padding: 5px;
+					font-size: $FONT_SIZE_XS;
+					vertical-align:top;
+					word-break:break-word;
+				}
+
+				&.title-row {
+					padding-left: 15px;
+					border-top: 1px solid $black;
+					border-bottom: 1px solid $black;
+					background: $secondaryContentColor;
+				}
+
+				&.market-row {
+					background: $fillColor;
+					font-size: $FONT_SIZE_XS;
+
+					&.limits-by-market {
+						margin-top: 20px;
+					}
+
+					tr {
+						th {
+							padding: 5px;
+
+							td {
+								vertical-align:top;
+								word-break:break-word;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
