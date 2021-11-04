@@ -9,6 +9,7 @@
   },
   "private": true,
   "dependencies": {
+    "ajv": "^5.0.0",
     "bower": "^1.7.0",
     "code-push": "^2.0.5",
     "cordova-android": "8.0.0",
